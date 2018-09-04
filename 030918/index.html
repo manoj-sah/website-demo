@@ -6,7 +6,7 @@
 
 <header class="header-color" id="first-component">
 <div class = "flex-container">
-    <div id="icon-box">ICON</div>
+    <div id="icon-box"><img id="icon-style" src="images/icon.png"></div>
     <div class="flex-container-inside">
         <div class="">
             <nav>
@@ -88,39 +88,154 @@
 
 <div id = "third-component" class="flex-container">
     <section id="tc-section-style">
-        <div id="text-padding"><b>Payments</b></div>
+        <div class="text-padding"><b>Payments</b></div>
         <div class="tc-div-style">
-            <button class="accordion">Make Payment <span class="arrow-style">></span>
+            <button class="accordion">Make Payment <span class="arrow-style">&or;</span>
             </button>
-            <div class="panel">
-                
+            <div class="list-margin">
+                <ul class="list-style">
+                    <li class="list-item-style">Once off- Outside Capital Bank</li>
+                    <li class="list-item-style">Once off- Within Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Outside Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Within Capital Bank</li>
+                    <li class="list-item-style">Foriegn Payment</li>
+                    <li class="list-item-style">Transfer Funds Between Own Accounts</li>
+                    <li class="list-item-style list-style-color">Multi Benificiary Payment</li>
+                </ul>
             </div>
         </div>
         <div class="tc-div-style">
             <button class="accordion">View Payment Details
-                <span class="arrow-style">></span>
+                <span class="arrow-style">&or;</span>
             </button>
-            <div class="panel"></div>
+            <div class="list-margin">
+                <ul class="list-style">
+                    <li class="list-item-style">Once off- Outside Capital Bank</li>
+                    <li class="list-item-style">Once off- Within Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Outside Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Within Capital Bank</li>
+                    <li class="list-item-style">Transfer Funds Between Own Accounts</li>
+                </ul>
+            </div>
         </div>
         <div class="tc-div-style">
             <button class="accordion">E-Payments and Collections (files)
-                <span class="arrow-style">></span>
+                <span class="arrow-style">&or;</span>
             </button>
-            <div class="panel"></div>
+            <div class="list-margin">
+                <ul class="list-style">
+                    <li class="list-item-style">Once off- Outside Capital Bank</li>
+                    <li class="list-item-style">Once off- Within Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Outside Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Within Capital Bank</li>
+                </ul>
+            </div>
         </div>
         <div class="tc-div-style">
             <button class="accordion">Manage Beneficairies
-                <span class="arrow-style">></span>
+                <span class="arrow-style">&#62;</span>
             </button>
-            <div class="panel"></div>
+            <div class="panel">
+            </div>
         </div>
     </section>
-    <aside class="flex-design border-line">
-        <div class="inner-border-line">A</div>
-        <div class="inner-border-line">B</div>
-        <div class="inner-border-line">C</div>
-        <div class="inner-border-line">D</div>
+    <aside class="flex-design">
+        <div id="bread-crumb-style">
+            <p>PAYMENTS: Make Payments / Multi Benificary Payment / Initial Bulk Payment
+            <img id="printer-img-style" src="images/printer-pic.png" alt="print"></p>
+        </div>
+        <div>
+           <p> <b style="color: green"> &#60; </b></b> <b>Initial Bulk Payment</b> </p>
+            <div class="flex-container">
+                <div class="squar-box" id="squar-position-left"><span>1</span></div>
+                <div id="hr"></div>
+                <div class="squar-box" id="squar-position-right">2</div>
+            </div>
+        </div>
+        <div id="details-border-style" class="flex-design background-theme">
+            <div>
+                <strong>Account Grouping Details</strong>
+            </div>
+            <div class="flex-container background-theme">
+                <div class="user-detail-style">Group Name</div>
+                <div class="user-detail-style">:<b>Moonraft Group</b></div>
+                <div class="user-detail-style">Group Currency</div>
+                <div class="user-detail-style">:<b>BWP</b></div>
+            </div>
+            <br>
+            <div class="text-padding">
+                <p>
+                    <b>Payment List</b>
+                    <span class="right-text-alignment">Displaying 1-1 Result</span>
+                </p>
+            </div>
+            <div id="report-table"class="flex-design">
+                <div class="table-flex" id="first-row">
+                        <div class="table-flex-div"><strong>PAYEE NICKNAME</strong></div>
+                        <div class="table-flex-div"><strong>DEBIT ACCOUNT</strong></div>
+                        <div class="table-flex-div"><strong>TRANSACTION TYPE</strong></div>
+                        <div class="table-flex-div"><strong>CURRENCY</strong></div>
+                        <div class="table-flex-div"><strong>AMOUNT</strong></div>
+                        <div class="table-flex-div"><strong>TRNSACTION ID</strong></div>
+                        <div class="table-flex-div"><strong>COMPANY NAME</strong></div>
+                        <div class="table-flex-div"><strong>ACCOUNT NUMBER</strong></div>
+                </div>
+                <hr>
+                <div class="table-flex" id="second-row">
+                    <div class="table-flex-div">PAYEE NICKNAME</div>
+                    <div class="table-flex-div">DEBIT ACCOUNT</div>
+                    <div class="table-flex-div">TRANSACTION TYPE</div>
+                    <div class="table-flex-div">CURRENCY</div>
+                    <div class="table-flex-div">AMOUNT</div>
+                    <div class="table-flex-div">TRNSACTION ID</div>
+                    <div class="table-flex-div">COMPANY NAME</div>
+                    <div class="table-flex-div">ACCOUNT NUMBER</div>
+                </div>
+                <div class="table-flex" id="third-row">
+                    <div class="table-flex-div">PAYEE NICKNAME</div>
+                    <div class="table-flex-div">DEBIT ACCOUNT</div>
+                    <div class="table-flex-div">TRANSACTION TYPE</div>
+                    <div class="table-flex-div">CURRENCY</div>
+                    <div class="table-flex-div">AMOUNT</div>
+                    <div class="table-flex-div">TRNSACTION ID</div>
+                    <div class="table-flex-div">COMPANY NAME</div>
+                    <div class="table-flex-div">ACCOUNT NUMBER</div>
+                </div>
+                <div class="table-flex" id="fourth-row">
+                    <div class="table-flex-div">PAYEE NICKNAME</div>
+                    <div class="table-flex-div">DEBIT ACCOUNT</div>
+                    <div class="table-flex-div">TRANSACTION TYPE</div>
+                    <div class="table-flex-div">CURRENCY</div>
+                    <div class="table-flex-div">AMOUNT</div>
+                    <div class="table-flex-div">TRNSACTION ID</div>
+                    <div class="table-flex-div">COMPANY NAME</div>
+                    <div class="table-flex-div">ACCOUNT NUMBER</div>
+                </div>
+            </div>
+        </div>
+        <div class="white-background margin-style">
+            <div id="password-cnf-form">
+                <div><h4><b>Confirmation Details</b></h4></div>
+                <div>
+                    <label for="transaction-password">Transaction Password</label><br>
+                    <input type="text" name="password" id="transaction-password" placeholder="Enter Password"><br>
+                    <label for="transaction-password">(Used for auditing purpose only)</label>
+                </div>
+                <hr>
+                <div class="flex-desing-btns">
+                    <button class="btn-design proceed-btn">Proceed</button>
+                    <div id="gap-between-btn"></div>
+                    <button class="btn-design">Back</button>
+                </div>
+            </div>
+        </div>
     </aside>
 </div>
+<footer>
+    <div id="footer-style">
+        <b>Sitemap | Privacy Policy | Terms & Condition | Disclaimer </b><br>
+        Cut off time EFT - 2pm, RTGS -1:30 PM Finance eBanking, All Right Reserved
+    </div>
+</footer>
 </body>        
 </html>

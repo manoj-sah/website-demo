@@ -14,6 +14,9 @@ body{
    /* border: 1px solid;*/
     align-items: flex-start;
 }
+#icon-style{
+    width: 105%;
+}
 .border-line{
     border: 1px solid;
 }
@@ -28,8 +31,9 @@ body{
 }
 .nav-style{ 
     text-decoration : none;
-    margin: 1vw;
+    padding: 1vw;
     color: black;
+    display: inline-block;
 }
 a:hover{
     background: black;
@@ -90,8 +94,7 @@ a:hover{
 #tc-section-style{
     width: 23%;
     background: #ffffff;
-}
-.accordion {
+}.accordion {
     background: #D0EBBE;
     color: black;
     cursor: pointer;
@@ -115,10 +118,122 @@ a:hover{
 .arrow-style{
     float: right;
 }
-#text-padding{
+.text-padding{
     padding: 1vw;
 }
 .flex-design{
     flex-direction: column;
     padding: 1vw;
+    width: -webkit-fill-available;
+}
+#bread-crumb-style{
+    background: #ffffff;
+    height: 10%;
+    padding-top: 0.3vw;
+}
+#printer-img-style{
+    float: right;
+    width: 5vh;
+    padding-right: 1vw;
+}
+.squar-box{
+    width: 5%;
+    height: 5%;
+    border-radius: 5%;
+    background: green;
+    color: #ffffff;
+    text-align: center;
+}
+#squar-position-left{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+#squar-position-right{
+    margin-right: 40%;
+    margin-bottom: 3%;
+    background: black;
+}
+#details-border-style{
+    border: 2px solid green;
+}
+.background-theme{
+    background: #FAFFF7;
+}
+.white-background{
+    background: #FFFFFF;
+}
+.user-detail-style{
+    width: 25%;
+    padding: 1vw;
+}
+.right-text-alignment{
+    float: right;
+}
+.table-flex{
+    display: flex;
+    background: #F0FFE3;
+}
+.table-flex-div{
+    width: 70%;
+    padding: 0.5vw;
+}
+#report-table{
+    border-top: 1px solid green;
+    overflow-x: scroll;
+}
+.margin-style{
+    margin-top: 1vw;
+}
+#password-cnf-form{
+    padding: 1vw;
+}
+.flex-desing-btns{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.btn-design{
+    border: none;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 1px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.proceed-btn{
+    background-color: #4CAF50;
+    color: white;
+    
+}
+#gap-between-btn{
+    width:5px;
+}
+#footer-style{
+    text-align: center;
+    height: 50px;
+    padding-top: 1vw;
+}
+.list-style{
+    list-style-type:none;
+    padding-left: -25px;
+}
+.list-item-style{
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.list-style-color{
+    background: black;
+    color: white;
+}
+.list-margin{
+    margin-left: -40px;
+}
+#hr{
+    width: 10vw;
+    height: 2px;
+    background: green;
+    margin-top: 1vw;
 }

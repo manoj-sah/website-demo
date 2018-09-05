@@ -93,7 +93,7 @@ a:hover{
     background: #F1F1F1;
 }
 #tc-section-style{
-    width: 23%;
+    width: 31%;
     background: #ffffff;
     margin-bottom: 60px;
 }
@@ -125,11 +125,11 @@ a:hover{
     padding:  1vw;
 }
 .text-padding{
-    padding: 0px 10px 0px 20px;
+    padding: 20px 10px 0px 20px;
 }
 .flex-design{
     flex-direction: column;
-    padding: 1vw;
+    padding-left: 1vw;
     width: -webkit-fill-available;
 }
 #bread-crumb-style{
@@ -154,6 +154,8 @@ a:hover{
 }
 #details-border-style{
     border: 2px solid green;
+    padding-right: 10px;
+    padding-bottom: 40px;
 }
 .background-theme{
     background: #FAFFF7;
@@ -164,6 +166,9 @@ a:hover{
 .user-detail-style{
     width: 25%;
     padding: 20px 20px;
+}
+.user-detail-style{
+    
 }
 .right-text-alignment{
     float: right;
@@ -179,6 +184,7 @@ a:hover{
 #report-table{
     border-top: 1px solid green;
     overflow-x: scroll;
+    padding: 3px 0px 0px;
 }
 .margin-style{
     margin-top: -2vw;
@@ -230,7 +236,7 @@ a:hover{
 }
 #hr{
     width: 10vw;
-    height: 2px;
+    height: 3px;
     background: green;
     margin-top: 25px;
     margin-right: 2px;
@@ -253,7 +259,7 @@ a:hover{
     width: 590px;
     height: 19px;
     margin: 0 auto;
-    text-align: center; 
+    padding-top: 8px; 
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
@@ -277,6 +283,7 @@ a:hover{
     letter-spacing: 0.4px;
     text-align: center;
     color: #9b9b9b; 
+    padding-top: 8px;
 }
 .footer-bar-style{
    padding: 25px 25px; 
@@ -288,6 +295,8 @@ a:hover{
     background-color: #ffffff;
     border: solid 1px #d9e0e6;
     text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
     
 }
 #transaction-password-text{
@@ -315,4 +324,9 @@ a:hover{
     letter-spacing: normal;
     text-align: left;
     color: #9b9b9b;
+}
+.divider-hr{
+    background: green;
+    width: inherit;
+    height: 1px;
 }

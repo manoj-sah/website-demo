@@ -3,7 +3,6 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
 <header class="header-color" id="first-component">
 <div class = "flex-container">
     <div id="icon-box"><img id="icon-style" src="images/icon.png"></div>
@@ -17,7 +16,7 @@
                 <a class = "nav-style" href="">ADMINISTRATION</a>
                 <a class = "nav-style" href="">GENERAL SERVICE</a>
                 <a class = "nav-style" href="">FAVOURITES</a>
-                <button id="btn-logout" onclick="alert('hey clicked')">LOGOUT</button>
+                <button id="btn-logout" onclick="alert('hey clicked')">LOG OUT</button>
             </nav>
 
         </div>
@@ -88,7 +87,7 @@
 
 <div id = "third-component" class="flex-container">
     <section id="tc-section-style">
-        <div class="text-padding"><b>Payments</b></div>
+        <div class="text-padding-payments"><b>Payments</b></div>
         <div class="tc-div-style">
             <button class="accordion">Make Payment <span class="arrow-style">&or;</span>
             </button>
@@ -133,9 +132,15 @@
         </div>
         <div class="tc-div-style">
             <button class="accordion">Manage Beneficairies
-                <span class="arrow-style">&#62;</span>
+                <span class="arrow-style">&or;</span>
             </button>
-            <div class="panel">
+            <div class="list-margin">
+                <ul class="list-style">
+                    <li class="list-item-style">Once off- Outside Capital Bank</li>
+                    <li class="list-item-style">Once off- Within Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Outside Capital Bank</li>
+                    <li class="list-item-style">Benificiary Payment- Within Capital Bank</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -146,23 +151,22 @@
         </div>
         <div>
            <p> <b style="color: green"> &#60; </b><b>Initial Bulk Payment</b> </p>
-            <div id="outer-div">
+            <div>
                     <div class="flex-container inner-div" id="">
-                        <div class="squar-box">1</div>
+                        <div class="squar-box"><p>1</p></div>
                         <div id="hr"></div>
-                        <div class="squar-box" id="squar-position-right">2</div>
+                        <div class="squar-box" id="squar-position-right"><p>2</p></div>
                     </div>
             </div>
-            <div id="outer-div">
-                    <div class="flex-container inner-div" id="">
-                        <div>Enter Details</div>
-                        <div id="gap"></div>
-                        <div>Confirmation</div>
+            <div>
+                    <div class="inner-div" id="inner-div-text">
+                        <p>Enter Details <span class="right-text-alignment">Confirmation</span></p>
+                        <!--<div></div>-->
                     </div>
             </div>
         </div>
         <div id="details-border-style" class="flex-design background-theme">
-            <div>
+            <div class="text-padding">
                 <strong>Account Grouping Details</strong>
             </div>
             <div class="flex-container background-theme">
@@ -172,7 +176,7 @@
                 <div class="user-detail-style">:<b>BWP</b></div>
             </div>
             <br>
-            <div class="text-padding">
+            <div class="text-padding margin-style">
                 <p>
                     <b>Payment List</b>
                     <span class="right-text-alignment">Displaying 1-1 Result</span>
@@ -222,17 +226,17 @@
                 </div>
             </div>
         </div>
-        <div class="white-background margin-style">
+        <div class="white-background margin-style-t-password">
             <div id="password-cnf-form">
                 <div><h4><b>Confirmation Details</b></h4></div>
                 <div>
-                    <label for="transaction-password">Transaction Password</label><br>
-                    <input type="text" name="password" id="transaction-password" placeholder="Enter Password"><br>
-                    <label for="transaction-password">(Used for auditing purpose only)</label>
+                    <label for="transaction-password"><span id="transaction-password-text">Transaction Password</span></label><br>
+                    <input type="text" name="password" id="transaction-password-input" placeholder="Enter Password"><br>
+                    <label for="transaction-password" id="sidenote-t-password">(Used for auditing purpose only)</label>
                 </div>
                 <hr>
                 <div class="flex-desing-btns">
-                    <button class="btn-design proceed-btn">Proceed</button>
+                    <button class="proceed-btn">Proceed</button>
                     <div id="gap-between-btn"></div>
                     <button class="btn-design">Back</button>
                 </div>
@@ -242,8 +246,15 @@
 </div>
 <footer>
     <div id="footer-style">
-        <b>Sitemap | Privacy Policy | Terms & Condition | Disclaimer </b><br>
-        Cut off time EFT - 2pm, RTGS -1:30 PM Finance eBanking, All Right Reserved
+        <div id="footer-inner-div">
+            <p>Site Map <span class="footer-bar-style">|</span> Privacy Policy <span class="footer-bar-style">|</span> Terms & Conditions <span class="footer-bar-style">|</span> Disclaimer </p>
+            
+        </div>
+        <div id="footer-inner-div-below-text">
+            <p>Cut off time EFT - 2 PM, RTGS -1:30 PM Finance eBanking, All Right Reserved</p>
+            
+        </div>
+        
     </div>
 </footer>
 </body>        

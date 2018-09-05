@@ -99,13 +99,20 @@ a:hover{
 }
 .accordion {
     background: #D0EBBE;
-    color: black;
     cursor: pointer;
     padding: 10px;
     width: 100%;
     border: none
  	transition: 0.4s;
     text-align: left;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #4a4a4a;
 }
 
 .active, .accordion:hover {
@@ -227,12 +234,23 @@ a:hover{
     padding-left: -25px;
 }
 .list-item-style{
-    padding-bottom: 10px;
+    padding-bottom: 22px;
     padding-left: 15px;
+    font-family: OpenSans;
+    font-size: 19px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
 }
 .list-style-color{
     background: black;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 .list-margin{
     margin-left: -40px;

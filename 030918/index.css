@@ -31,7 +31,7 @@ body{
 }
 .nav-style{ 
     text-decoration : none;
-    padding: 1.5vw;
+    padding: 15px;
     color: black;
     display: inline-block;
 }
@@ -245,7 +245,7 @@ a:hover{
     padding-bottom: 15px;
 }
 #footer-style{
-    width: 1495px;
+    width: initial;
     height: 93px;
     background-color: #ffffff;
 }

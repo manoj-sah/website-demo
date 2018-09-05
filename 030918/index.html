@@ -23,9 +23,9 @@
         <div class="flex-container full-width">
             <div class="dropdown-position">
             <div>
-                <label>Company Name</label>
+                <label class="dropdown-header">Company Name</label>
             </div>
-            <div>
+            <div class="dropdown-margin-style">
                 <select class="dropdown-style">
                 <option value="A">Urban Security Botswana Pvt. Ltd. 
 </option>
@@ -38,9 +38,9 @@
             
             <div class="dropdown-position">
             <div>
-                <label>Division Id</label>
+                <label class="dropdown-header">Division Id</label>
             </div>
-            <div>
+            <div class="dropdown-margin-style">
                 <select class="dropdown-style">
                 <option value="W">Urban Security Botswana Pvt. Ltd.</option>
                 <option value="X">X</option>
@@ -54,8 +54,8 @@
                     <img class="profile-avatar" src="images/dummy-profile.png" alt="dummy image">
                 </div>
                 <div>
-                    <div>Welcome</div>
-                    <div><b>Urban Security Botswana Pvt. Ltd.</b></div>
+                    <div id="welcom">Welcome</div>
+                    <div id="US">Urban Security Botswana Pvt. Ltd.</div>
                 </div>
             </div>
         </div>
@@ -146,11 +146,11 @@
     </section>
     <aside class="flex-design">
         <div id="bread-crumb-style">
-            <p id="bread-crumb-style-text"><strong>PAYMENTS</strong>: Make Payments / Multi Benificary Payment / Initial Bulk Payment
+            <p id="bread-crumb-style-text"><strong>PAYMENTS</strong>: <spna class="gap-between-text">Make Payments</spna> <span class="gap-between-text">/</span> Multi Benificary Payment <span class="gap-between-text">/</span> <strong>Initial Bulk Payment</strong>
             <img id="printer-img-style" src="images/printer-pic.png" alt="print"></p>
         </div>
         <div>
-           <p> <b style="color: green"> &#60; </b><b>Initial Bulk Payment</b> </p>
+           <p><img src="images/left-arrow.png" class="img-left-arrow"><span id="bulk-payment">Initial Bulk Payment</span></p>
             <div>
                     <div class="flex-container inner-div" id="">
                         <div class="squar-box"><p>1</p></div>
@@ -161,11 +161,10 @@
             <div>
                     <div class="inner-div" id="inner-div-text">
                         <p>Enter Details <span class="right-text-alignment">Confirmation</span></p>
-                        <!--<div></div>-->
                     </div>
             </div>
         </div>
-        <div id="details-border-style" class="flex-design background-theme">
+        <div id="details-border-style" class="details-flex-design background-theme">
             <div class="text-padding">
                 <strong>Account Grouping Details</strong>
             </div>

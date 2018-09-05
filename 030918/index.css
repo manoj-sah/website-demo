@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    font-family : sans-serif;
 }
 .flex-container{
     display: flex;
@@ -32,8 +33,18 @@ body{
 .nav-style{ 
     text-decoration : none;
     padding: 15px;
-    color: black;
     display: inline-block;
+    font-family: OpenSans;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #383838;
+    color: var(--black);
+    border-radius: 0px 0px 8px 8px;
 }
 a:hover{
     background: black;
@@ -41,18 +52,45 @@ a:hover{
     transition: .5s;
 }
 #btn-logout{
-    background-color: #E7F8DB;
-    color: black;
-    border: 1px solid black;
-    padding: 5px;
+    width: 77px;
+    height: 30px;
+    border-radius: 4px;
+    border: solid 1.2px #383838;
+    background-color: #e7f8db;
+    margin-left: 20px;
     
 }
+.dropdown-header{
+    width: 108px;
+    height: 17px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #383838;
+}
 .dropdown-style{
-    width: 25vw;
+    width: 350px;
     padding-right: 1vw;
-    height: 5%;
-    border-radius: 0.5vw;
+    height: 25px;
+    border-radius: 3px;
     background: #D0EBBE;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #383838;
+}
+.dropdown-margin-style{
+    margin-top: 5px;
 }
 .position-style{
     width: 100%;
@@ -75,6 +113,39 @@ a:hover{
     width: 98%;
     height: 130%; 
 }
+#bulk-payment{
+    width: 208px;
+    height: 27px;
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a; 
+}
+#us{
+    width: 217px;
+    height: 32px;
+    opacity: 0.87;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #383838;
+    color: var(--black);
+}
+#welcome{
+    font-size: 12px;
+    line-height: 1.33;
+    color: #4a4a4a;
+}
 #second-component{
     height: 30%;
 }
@@ -96,6 +167,9 @@ a:hover{
     width: 31%;
     background: #ffffff;
     margin-bottom: 60px;
+    margin-left: 15px;
+    margin-right: 8px;
+    margin-top: -5px;
 }
 .accordion {
     background: #D0EBBE;
@@ -136,7 +210,17 @@ a:hover{
 }
 .flex-design{
     flex-direction: column;
-    padding-left: 1vw;
+    margin-top: -5px;
+    margin-left: 11px;
+    margin-right: 11px;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    width: -webkit-fill-available;
+}
+.details-flex-design{
+    flex-direction: column;
+    margin-top: -5px;
     width: -webkit-fill-available;
 }
 #bread-crumb-style{
@@ -145,12 +229,29 @@ a:hover{
     padding-top: 1px;
 }
 #bread-crumb-style-text{
-   padding-left: 20px; 
+    padding-left: 20px; 
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+}
+.gap-between-text{
+    padding-right: 10px;
 }
 #printer-img-style{
     float: right;
     width: 30px;
     padding-right: 1vw;
+}
+.img-left-arrow{
+    width: 25px;
+    height: 16.5px;
+    padding-left: 20px;
 }
 .squar-box{
     width: 35%;
@@ -161,6 +262,17 @@ a:hover{
 }
 #squar-position-right{
     background: black;
+}
+.enter-detail-style{
+    opacity: 0.87;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #4a4a4a;
 }
 #details-border-style{
     border: 2px solid green;
@@ -201,7 +313,7 @@ a:hover{
     margin-top: -2vw;
 }
 .margin-style-t-password{
-   margin-top:  1vw;
+    margin-top: 15px;
 }
 #password-cnf-form{
     padding: 1vw;
@@ -265,8 +377,10 @@ a:hover{
     margin-left: 2px;
 }
 .inner-div {
-  width: 20%;
-  margin: 0 auto;
+    width: 20%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    
 }
 #inner-div-text{
     width: 250px;

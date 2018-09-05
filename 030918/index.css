@@ -134,12 +134,15 @@ a:hover{
 }
 #bread-crumb-style{
     background: #ffffff;
-    height: 10%;
-    padding-top: 0.3vw;
+    height: 50px;
+    padding-top: 1px;
+}
+#bread-crumb-style-text{
+   padding-left: 20px; 
 }
 #printer-img-style{
     float: right;
-    width: 5vh;
+    width: 30px;
     padding-right: 1vw;
 }
 .squar-box{

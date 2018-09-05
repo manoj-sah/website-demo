@@ -1,3 +1,11 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/opensans/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/roboto/Roboto-Regular.ttf");
+}
 body{
     margin: 0px;
     font-family : sans-serif;
@@ -58,13 +66,14 @@ a:hover{
     border: solid 1.2px #383838;
     background-color: #e7f8db;
     margin-left: 20px;
+    cursor: pointer;
     
 }
 .dropdown-header{
     width: 108px;
     height: 17px;
     font-family: OpenSans;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -74,7 +83,7 @@ a:hover{
     color: #383838;
 }
 .dropdown-style{
-    width: 350px;
+    width: 365px;
     padding-right: 1vw;
     height: 25px;
     border-radius: 3px;
@@ -97,6 +106,10 @@ a:hover{
 }
 .dropdown-position{
     padding: 1vw;
+}
+.my-profile-position{
+    padding-top: 25px;
+    padding-left: 15px;
 }
 .profile-avatar{
     width: 95%;
@@ -147,18 +160,46 @@ a:hover{
     color: #4a4a4a;
 }
 #second-component{
-    height: 30%;
+    height: 185px;
 }
 #inner-dropdown-div{
-    background: white;
-    width: 75%;
-    border : 1px solid black;
+    width: 250px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+    border: solid 1px #383838;
+}
+.d-width{
+    padding-left: 10px;
+    padding-top: 6px;  
+}
+#A-font{
+    padding-left: 10px;
+    padding-top: 6px;
 }
 .inner-dropdown{
     border: none;
+    width: 105pxs;
+  
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #383838;
+  color: var(--black);
 }
 #inner-image{
     height: 110%;
+}
+.vr-divider{
+    width: 1px;
+    height: 29px;
+    opacity: 0.2;
+    background-color: #383838;
 }
 #third-component{
     background: #F1F1F1;
@@ -180,7 +221,7 @@ a:hover{
  	transition: 0.4s;
     text-align: left;
     font-family: OpenSans;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -204,6 +245,17 @@ a:hover{
 }
 .text-padding-payments{
     padding:  1vw;
+    width: 77px;
+    height: 16px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #373d3f;
 }
 .text-padding{
     padding: 20px 10px 0px 20px;
@@ -225,13 +277,13 @@ a:hover{
 }
 #bread-crumb-style{
     background: #ffffff;
-    height: 50px;
+    height: 45px;
     padding-top: 1px;
 }
 #bread-crumb-style-text{
     padding-left: 20px; 
     font-family: OpenSans;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -242,6 +294,7 @@ a:hover{
 }
 .gap-between-text{
     padding-right: 10px;
+    padding-left: 10px;
 }
 #printer-img-style{
     float: right;
@@ -263,16 +316,57 @@ a:hover{
 #squar-position-right{
     background: black;
 }
+#acd-style{
+    width: 197px;
+  height: 22px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
+}
 .enter-detail-style{
     opacity: 0.87;
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.29;
     letter-spacing: normal;
     color: #4a4a4a;
+}
+.right-text-alignment-cnf{
+    float: right;
+    width: 82px;
+  height: 18px;
+  opacity: 0.87;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+#payment-text-style{
+    width: 101px;
+  height: 22px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
 }
 #details-border-style{
     border: 2px solid green;
@@ -289,19 +383,68 @@ a:hover{
     width: 25%;
     padding: 20px 20px;
 }
-.user-detail-style{
-    
+.user-detail-style-group-text{
+    width: 150px;
+  height: 15px;
+  opacity: 0.87;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  text-align: left;
+  color: #747474;
 }
-.right-text-alignment{
+.user-detail-style-name-text{
+    width: 110px;
+  height: 20px;
+  opacity: 0.87;
+  font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4a4a4a;
+    padding-left: 20px;
+}
+
+#display-resulttext-style{
     float: right;
+    width: 136px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #4a4a4a;
 }
 .table-flex{
     display: flex;
     background: #F0FFE3;
 }
 .table-flex-div{
-    width: 70%;
-    padding: 0.5vw;
+
+    padding: 12px;
+  height: 17px;
+  opacity: 0.87;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #4a4a4a;
 }
 #report-table{
     border-top: 1px solid green;
@@ -314,6 +457,20 @@ a:hover{
 }
 .margin-style-t-password{
     margin-top: 15px;
+}
+#cnf-text-style{
+    padding-bottom: 20px;
+    width: 160px;
+  height: 22px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
 }
 #password-cnf-form{
     padding: 1vw;
@@ -350,7 +507,7 @@ a:hover{
     padding-bottom: 22px;
     padding-left: 15px;
     font-family: OpenSans;
-    font-size: 19px;
+    font-size: 13px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -437,22 +594,22 @@ a:hover{
 }
 #transaction-password-text{
     width: 123px;
-    height: 17px;
-    font-family: OpenSans;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #4a4a4a;
+  height: 17px;
+  font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4a4a4a;
 }
 #sidenote-t-password{
     width: 219px;
     height: 10px;
     font-family: OpenSans;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;

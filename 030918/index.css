@@ -194,7 +194,8 @@ a:hover{
 #report-table{
     border-top: 1px solid green;
     overflow-x: scroll;
-    padding: 3px 0px 0px;
+    margin-left: 15px;
+    padding: 0px;
 }
 .margin-style{
     margin-top: -2vw;

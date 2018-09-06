@@ -440,15 +440,15 @@ a:hover{
 .table-flex-div{
     flex-shrink: 0; 
     padding: 13px;
-  opacity: 0.87;
-  font-family: OpenSans;
-  font-size: 12px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  color: #4a4a4a;
+    opacity: 0.87;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #4a4a4a;
 }
 #report-table{
     border: solid 2px #d4f2bb;
@@ -462,6 +462,11 @@ a:hover{
 }
 .col-width{
     width: 140px;
+}
+.table-header-style{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .details-font-style{
   opacity: 0.87;

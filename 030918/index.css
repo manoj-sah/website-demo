@@ -263,7 +263,7 @@ a:hover{
     color: #373d3f;
 }
 .text-padding{
-    padding: 20px 10px 0px 20px;
+    padding: 20px 15px 0px 30px;
 }
 .flex-design{
     flex-direction: column;
@@ -387,7 +387,7 @@ a:hover{
 }
 .user-detail-style{
     width: 25%;
-    padding: 20px 20px;
+    padding: 20px 30px;
 }
 .user-detail-style-group-text{
     width: 150px;
@@ -439,7 +439,7 @@ a:hover{
 }
 .table-flex-div{
     flex-shrink: 0; 
-    padding: 12px;
+    padding: 13px;
   opacity: 0.87;
   font-family: OpenSans;
   font-size: 12px;

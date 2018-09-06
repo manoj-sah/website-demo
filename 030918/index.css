@@ -10,6 +10,10 @@ body{
     margin: 0px;
     font-family : sans-serif;
 }
+#hr-black{
+    height: 5px;
+    background: black;
+}
 .flex-container{
     display: flex;
     align-items: flex-start;
@@ -41,6 +45,7 @@ body{
 .nav-style{ 
     text-decoration : none;
     padding: 15px;
+    margin-left: 20px;
     display: inline-block;
     font-family: OpenSans;
     font-size: 13px;
@@ -446,12 +451,14 @@ a:hover{
   color: #4a4a4a;
 }
 #report-table{
+    border: solid 2px #d4f2bb;
     border-top: 1px solid green;
     overflow-x: scroll;
     margin-left: 15px;
     padding: 0px;
     width: initial;
     margin-bottom: 0px;
+    background-color: #f0ffe3;
 }
 .col-width{
     width: 140px;
@@ -635,7 +642,6 @@ a:hover{
     color: #9b9b9b;
 }
 .divider-hr{
-    background: green;
-    width: inherit;
-    height: 1px;
+    width: 1313px;
+    border: solid 1px #b4e195;
 }

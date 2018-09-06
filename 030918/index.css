@@ -268,7 +268,8 @@ a:hover{
     border-radius: 3px;
     background-color: #f5f5f5;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-    width: -webkit-fill-available;
+    width: 1000px;
+    margin-bottom: 60px;
 }
 .details-flex-design{
     flex-direction: column;
@@ -432,7 +433,7 @@ a:hover{
     background: #F0FFE3;
 }
 .table-flex-div{
-
+    flex-shrink: 0; 
     padding: 12px;
   opacity: 0.87;
   font-family: OpenSans;
@@ -442,7 +443,6 @@ a:hover{
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0.5px;
-  text-align: justify;
   color: #4a4a4a;
 }
 #report-table{
@@ -450,12 +450,13 @@ a:hover{
     overflow-x: scroll;
     margin-left: 15px;
     padding: 0px;
+    width: initial;
+    margin-bottom: 0px;
 }
 .col-width{
-    width: 110px;
+    width: 140px;
 }
 .details-font-style{
-    width: 111px;
   opacity: 0.87;
   font-family: OpenSans;
   font-size: 13px;

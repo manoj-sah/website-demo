@@ -622,6 +622,7 @@ a:hover{
     border: solid 1px #d9e0e6;
     margin-top: 7px;
     margin-bottom: 7px;
+    padding: 7px;
     
 }
 #transaction-password-text{

@@ -240,10 +240,8 @@ a:hover{
 }
 
 .panel {
-    padding: 0 18px;
+    margin-left: -40px;
     display: none;
-    background-color: white;
-    overflow: hidden;
 }
 .arrow-style{
     float: right;

@@ -5,12 +5,13 @@ function accordion() {
     for (i = 0; i < acc.length; i++) {
         
     acc[i].addEventListener("click", function() {
-        if(this.childNodes[1].classList.contains("fa-angle-up")){
-            this.childNodes[1].classList.remove("fa-angle-up");
-            this.childNodes[1].classList.add("fa-angle-down");
+        var arrow = this.childNodes[1].classList;
+        if(arrow.contains("fa-angle-up")){
+            arrow.remove("fa-angle-up");
+            arrow.add("fa-angle-down");
         }else{
-            this.childNodes[1].classList.add("fa-angle-up");
-            this.childNodes[1].classList.remove("fa-angle-down");
+            arrow.add("fa-angle-up");
+            arrow.remove("fa-angle-down");
         }
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("panel-show");

@@ -238,13 +238,23 @@ a:hover{
 .active, .accordion:hover {
     background-color:  #D0EBBE; 
 }
-
-.panel {
-    margin-left: -40px;
+.panel-show{
+   margin-left: -40px;
+    display: block; 
+}
+.panel{
     display: none;
 }
+.panel.panel-show{
+    margin-left: -40px;
+    display: block; 
+}
+
 .arrow-style{
     float: right;
+}
+.fa-angle-down.fa-angle-up{
+    content:  \f106;
 }
 .text-padding-payments{
     padding:  1vw;
@@ -272,7 +282,7 @@ a:hover{
     background-color: #f5f5f5;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
     width: 1000px;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
 }
 .details-flex-design{
     flex-direction: column;
@@ -613,7 +623,6 @@ a:hover{
     border-radius: 3px;
     background-color: #ffffff;
     border: solid 1px #d9e0e6;
-    text-align: center;
     margin-top: 7px;
     margin-bottom: 7px;
     
@@ -647,4 +656,12 @@ a:hover{
 .divider-hr{
     width: 1313px;
     border: solid 1px #b4e195;
+}
+.hide{
+    display: none;
+}
+.show{
+    margin-top: 5px;
+    display: block;
+    color: red;
 }

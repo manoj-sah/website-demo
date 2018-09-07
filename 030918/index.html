@@ -1,6 +1,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/script.js"></script>
     <script>
         window.onload = accordion;
@@ -99,10 +100,11 @@
 <div id = "third-component" class="flex-container">
     <section id="tc-section-style">
         <div class="text-padding-payments"><strong>Payments</strong></div>
-        <div class="">
-            <button class="accordion">Make Payment <span class="arrow-style"><strong>&#708</strong></span>
+        <div>
+            <button class="accordion">Make Payment 
+                <i class="fa arrow-style fa-angle-down" ></i>
             </button>
-            <div class="list-margin panel">
+            <div class="panel">
                 <ul class="list-style">
                     <li class="list-item-style">Once off- Outside Capital Bank</li>
                     <li class="list-item-style">Once off- Within Capital Bank</li>
@@ -114,9 +116,9 @@
                 </ul>
             </div>
         </div>
-        <div class="">
+        <div>
             <button class="accordion">View Payment Details
-                <span class="arrow-style"><strong>&#708</strong></span>
+                <i class="fa arrow-style fa-angle-down" ></i>
             </button>
             <div class="panel">
                 <ul class="list-style">
@@ -128,11 +130,11 @@
                 </ul>
             </div>
         </div>
-        <div class="">
+        <div>
             <button class="accordion">E-Payments and Collections (files)
-                <span class="arrow-style"><strong>&#708</strong></span>
+                <i class="fa arrow-style fa-angle-down" ></i>
             </button>
-            <div class="list-margin panel">
+            <div class="panel">
                 <ul class="list-style">
                     <li class="list-item-style">Once off- Outside Capital Bank</li>
                     <li class="list-item-style">Once off- Within Capital Bank</li>
@@ -141,11 +143,11 @@
                 </ul>
             </div>
         </div>
-        <div class="">
+        <div>
             <button class="accordion">Manage Beneficairies
-                <span class="arrow-style"><strong>&#708</strong></span>
+                <i class="fa arrow-style fa-angle-down"></i>
             </button>
-            <div class="list-margin panel">
+            <div class="panel">
                 <ul class="list-style">
                     <li class="list-item-style">Once off- Outside Capital Bank</li>
                     <li class="list-item-style">Once off- Within Capital Bank</li>
@@ -265,12 +267,14 @@
                 <div id="cnf-text-style">Confirmation Details</div>
                 <div>
                     <label for="transaction-password"><span id="transaction-password-text">Transaction Password</span></label><br>
-                    <input type="text" name="password" id="transaction-password-input" placeholder="Enter Password"><br>
+                    <input type="text" name="password" id="transaction-password-input" placeholder="Enter Password" onfocus="removeMsg();"><br>
                     <label for="transaction-password" id="sidenote-t-password">(Used for auditing purpose only)</label>
+                </div>
+                <div class="hide" id="warnning-message">
                 </div>
                 <hr>
                 <div class="flex-desing-btns">
-                    <button class="proceed-btn">Proceed</button>
+                    <button class="proceed-btn" onClick="validate();">Proceed</button>
                     <div id="gap-between-btn"></div>
                     <button class="btn-design">Back</button>
                 </div>

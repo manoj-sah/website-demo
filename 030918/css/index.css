@@ -253,9 +253,6 @@ a:hover{
 .arrow-style{
     float: right;
 }
-.fa-angle-down.fa-angle-up{
-    content:  \f106;
-}
 .text-padding-payments{
     padding:  1vw;
     width: 77px;

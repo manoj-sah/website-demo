@@ -5,9 +5,17 @@ function accordion() {
     for (i = 0; i < acc.length; i++) {
         
     acc[i].addEventListener("click", function() {
+        if(this.childNodes[1].classList.contains("fa-angle-up")){
+            this.childNodes[1].classList.remove("fa-angle-up");
+            this.childNodes[1].classList.add("fa-angle-down");
+        }else{
+            this.childNodes[1].classList.add("fa-angle-up");
+            this.childNodes[1].classList.remove("fa-angle-down");
+        }
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("panel-show");
     });
+    
 }
 }
 
@@ -22,7 +30,6 @@ function validate(){
         alert("Password accepted");
     }
     else{
-        
         messageDiv.innerHTML="Please enter password which should not contain any symbols";
     }
     }else{

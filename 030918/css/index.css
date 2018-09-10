@@ -238,16 +238,15 @@ a:hover{
 .active, .accordion:hover {
     background-color:  #D0EBBE; 
 }
-.panel-show{
-   margin-left: -40px;
-    display: block; 
-}
 .panel{
     display: none;
+    transition: height 0.5s linear;
+    height: 0px;
 }
 .panel.panel-show{
     margin-left: -40px;
     display: block; 
+    height: auto;
 }
 
 .arrow-style{

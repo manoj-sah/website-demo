@@ -1,22 +1,33 @@
+var getHeightofDisplayBlock = function(element){
+  element.style.display = 'block';
+  var height = element.scrollHeight+"px";
+  console.log(height);
+  element.style.display = '';
+  return height;
+}
+
 function accordion() {
     var acc = document.getElementsByClassName("accordion");
-    var arrow = document.getElementsByClassName("arrow-style");
     var i;
     for (i = 0; i < acc.length; i++) {
-        
+
     acc[i].addEventListener("click", function() {
+        var height = getHeightofDisplayBlock(this.nextElementSibling);
         var arrow = this.childNodes[1].classList;
         if(arrow.contains("fa-angle-up")){
+            this.nextElementSibling.style.height = 0+"px";
             arrow.remove("fa-angle-up");
             arrow.add("fa-angle-down");
         }else{
+            this.nextElementSibling.style.height = height;
             arrow.add("fa-angle-up");
             arrow.remove("fa-angle-down");
         }
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("panel-show");
+        
     });
-    
+
 }
 }
 

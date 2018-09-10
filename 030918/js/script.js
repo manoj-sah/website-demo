@@ -8,9 +8,7 @@ var getHeightofDisplayBlock = function(element){
 
 function accordion() {
     var acc = document.getElementsByClassName("accordion");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-
+    for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         var height = getHeightofDisplayBlock(this.nextElementSibling);
         var arrow = this.childNodes[1].classList;
@@ -23,9 +21,9 @@ function accordion() {
             arrow.add("fa-angle-up");
             arrow.remove("fa-angle-down");
         }
-        this.classList.toggle("active");
+
         this.nextElementSibling.classList.toggle("panel-show");
-        
+
     });
 
 }

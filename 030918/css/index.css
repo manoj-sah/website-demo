@@ -239,14 +239,17 @@ a:hover{
     background-color:  #D0EBBE; 
 }
 .panel{
-    display: none;
-    transition: height 0.5s linear;
+    margin-left: -40px;
+    overflow: hidden;
     height: 0px;
+    transition: height 0.5s linear;
+    
 }
 .panel.panel-show{
     margin-left: -40px;
-    display: block; 
+    display: block;
     height: auto;
+    
 }
 
 .arrow-style{

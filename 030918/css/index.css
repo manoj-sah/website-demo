@@ -45,7 +45,8 @@ body{
 .nav-style{ 
     text-decoration : none;
     padding: 15px;
-    margin-left: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block;
     font-family: OpenSans;
     font-size: 13px;

@@ -20,8 +20,8 @@ export default class Checkout extends React.Component {
     placeOrder = () => {
         const personalinfo = this.formInput.current.getPersonalInfo();
         const address = this.addrInput.current.getAddressInfo();
-        const isPiValid = this.formInput.current.validate(personalinfo);
-        const isAdValid = this.addrInput.current.validate(address);
+        // const isPiValid = this.formInput.current.validate(personalinfo);
+        // const isAdValid = this.addrInput.current.validate(address);
         
         
         console.log(personalinfo);

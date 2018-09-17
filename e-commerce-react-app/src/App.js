@@ -8,6 +8,7 @@ import Checkout from './seen/checkout';
 import BlogPost from './seen/blog_post';
 import UserPosts from './seen/user_post.js';
 import AllPost from './seen/all_post';
+import AddProduct from './seen/add_product'
 // import Temp from './seen/temp';
 
 class App extends React.Component {
@@ -27,6 +28,7 @@ class App extends React.Component {
               <Route exact path='/blogs' component={BlogPost}/>
               <Route path='/blogs/user/:id' component={UserPosts}/>
               <Route path='/blogs/post/:id' component={AllPost}/>
+              <Route path='/addproduct' component={AddProduct}/>
           </Switch>
       </BrowserRouter>
     );

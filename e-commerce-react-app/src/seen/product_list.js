@@ -21,7 +21,7 @@ export default class ProductList extends React.Component {
                 <Header/>
                 <Nav links={linkarr}/>
                 <div className="banner">
-                    <img src="https://shop.polymer-project.org/es6-unbundled/images/mens_outerwear.jpg" alt="dsas"></img> 
+                    <img src="https://shop.polymer-project.org/esm-bundled/images/mens_outerwear.jpg" alt="dsas"></img> 
                     <p>Men's Outerwear</p>
                     <p id="count">{productList.length} items</p>
                 </div>
@@ -29,7 +29,7 @@ export default class ProductList extends React.Component {
                     {productList.map( item => 
                     <Link to={'/productdetails/' + item.id}>
                         <div className = "list-item"> 
-                            <img src="https://shop.polymer-project.org/es6-unbundled/data/images/10-15068B.jpg" alt="sdasd"></img>
+                            <img src="https://shop.polymer-project.org/esm-bundled/data/images/10-15068B.jpg" alt="sdasd"></img>
                             <p>{item.name}</p>
                             <p>{item.price}</p>
                         </div>

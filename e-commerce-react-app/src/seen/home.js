@@ -15,9 +15,9 @@ export default class Home extends React.Component {
             <div>
                 <Header/>
                 <Nav links={linkarr}/>
-                <Banner src="https://shop.polymer-project.org/es6-unbundled/images/mens_outerwear.jpg" label="Men's Outerwear"/>
-                <Banner src="https://shop.polymer-project.org/es6-unbundled/images/ladies_outerwear.jpg" label="Ladies Outerwear"/>
-                <Banner src="https://shop.polymer-project.org/es6-unbundled/images/mens_tshirts.jpg" label="Kids Outerwear"/>
+                <Banner src="https://shop.polymer-project.org/esm-bundled/images/mens_outerwear.jpg" label="Men's Outerwear"/>
+                <Banner src="https://shop.polymer-project.org/esm-bundled/images/ladies_outerwear.jpg" label="Ladies Outerwear"/>
+                <Banner src="https://shop.polymer-project.org/esm-bundled/images/mens_tshirts.jpg" label="Kids Outerwear"/>
             </div>
         );
     }

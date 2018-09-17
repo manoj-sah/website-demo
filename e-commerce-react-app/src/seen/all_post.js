@@ -32,7 +32,6 @@ render() {
             <div>
                 <Header/>
                 <Nav links={linkarr}/>
-                <div>This is all posts</div>
                 {this.state.allPostList.map(item =>
                      <div class="blog-style">
                         <p><label>Post Id : </label>{item.postId}</p>

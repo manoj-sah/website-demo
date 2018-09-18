@@ -9,22 +9,40 @@ class Home extends React.Component {
     this.state = {
       newPostList : []
     }
+    this.dialogRef = React.createRef();
   }
   getPostData = (postData) =>{
+    const temp = [...this.state.newPostList];
+    if(postData.isEdited){
+      temp.splice(postData.currentIndex, 1, postData);
+    }else{
+      temp.push(postData);
+    }
+    this.setState ({
+      newPostList: temp
+    });
+  }
+
+  deletePost = (index) =>{
+    console.log("delete invoked.....");
     const temp = [...this.state.newPostList]
-    temp.push(postData)
+    temp.splice(index, 1);
     this.setState ({
       newPostList: temp
     })
-    
+    console.log("after delete array length=>", this.state.newPostList.length);
+  }
+
+  editPost = (index, item) =>{
+    this.dialogRef.current.dialogFunc(index, item);
   }
 
 
   render() {
     return (
       <div className="body-style">
-          <Header parentHFunc = {this.getPostData} />
-          <PostBlock postDataList = {this.state.newPostList}/>
+          <Header parentFuncGet = {this.getPostData} ref = {this.dialogRef}/>
+          <PostBlock postDataList = {this.state.newPostList} deletePost = {this.deletePost} editPost = {this.editPost}/>
       </div>
     );
   }

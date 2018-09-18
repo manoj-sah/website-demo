@@ -4,7 +4,10 @@
     align-items: flex-start;
 }
 .post-block-style{
-    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 25%;
     background: rgb(179, 224, 224);
     border: 1px solid black;
     box-shadow: 0 2px 2px 0 rgba(214, 237, 238, 0.007);
@@ -13,4 +16,11 @@
     overflow: hidden;
     border-radius: 5px;
     padding: 5px;
+}
+.title-block-style{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-style{
+    display: flex;
 }

@@ -12,7 +12,9 @@ class FormDialog extends React.Component {
     open: false,
     title : "",
     authorName:"",
-    description : ""
+    description : "",
+    currentIndex : "",
+    isEdited : false
   };
 
   handleClickOpen = () => {
@@ -25,8 +27,22 @@ class FormDialog extends React.Component {
   };
 
   postArticle = () =>{
-      this.props.parentHFunct(this.state);
-      this.setState({ open: false });
+    this.setState({ 
+      open: false, 
+      isEdited : false
+    });
+    this.props.parentFuncGet(this.state);
+  }
+
+  editPost = (index, currentData) => {
+    this.setState({ 
+      open: true, 
+      title :  currentData.title, 
+      authorName : currentData.authorName, 
+      description : currentData.description,
+      currentIndex : index,
+      isEdited : true
+    });
   }
 
   closeDialog = () => {
@@ -36,7 +52,7 @@ class FormDialog extends React.Component {
   render() {
     return (
       <div>
-        <Button className = "btn-style" variant="contained" color="secondary" onClick={this.handleClickOpen}>Add New Post</Button>
+        <Button className = "btn-style" variant="contained" color="primary" onClick={this.handleClickOpen}>Add New Post</Button>
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}

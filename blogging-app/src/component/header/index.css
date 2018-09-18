@@ -6,7 +6,7 @@
     min-height : 10%;
     display: flex;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-    background: rgb(188, 219, 245)
+    background: rgb(188, 219, 245);
 }
 .div-style{
     display: flex;

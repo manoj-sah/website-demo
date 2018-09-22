@@ -14,12 +14,13 @@ class FormDialog extends React.Component {
     authorName:"",
     description : "",
     currentIndex : "",
-    isEdited : false
+    isEdited : false,
+    gitCheck : ""
   };
 
   handleClickOpen = () => {
     this.setState({ open: true });
-    // this.clearFields();
+    this.clearFields();
   };
 
   clearFields = () => {
